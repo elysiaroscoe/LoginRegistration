@@ -1,0 +1,43 @@
+﻿@using Login_Reg.Models
+@model User
+
+
+<div class="text-center">
+    <h1>Register to this Cool Site!</h1>
+    <a href="/login">Login</a>
+</div>
+
+<div>
+    <form asp-action="Register">
+        <div>
+            <div>
+                <span asp-validation-for="FirstName"></span>
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName">
+            </div>
+            <div>
+                <span asp-validation-for="LastName"></span>
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName">
+            </div>
+            <div>
+                <span asp-validation-for="Email"></span>
+                <label asp-for="Email"></label>
+                <input asp-for="Email">
+            </div>
+            <div>
+                <span asp-validation-for="Password"></span>
+                <label asp-for="Password"></label>
+                <input asp-for="Password">
+            </div>
+            <div>
+                <span asp-validation-for="Confirm"></span>
+                <label asp-for="Confirm"></label>
+                <input asp-for="Confirm">
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </div>
+    </form>
+</div>

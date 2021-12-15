@@ -1,0 +1,29 @@
+@using Login_Reg.Models
+@model LoginUser
+
+
+
+<div class="text-center">
+    <h1>Login to this Cool Site!</h1>
+    <a href="http://localhost:5000">Register</a>
+</div>
+
+<div>
+    <form asp-action="LoginPost">
+        <div>
+            <div>
+                <span asp-validation-for="LogEmail"></span>
+                <label asp-for="LogEmail"></label>
+                <input asp-for="LogEmail">
+            </div>
+            <div>
+                <span asp-validation-for="LogPassword"></span>
+                <label asp-for="LogPassword"></label>
+                <input asp-for="LogPassword">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </div>
+    </form>
+</div>
